@@ -1,0 +1,46 @@
+<!--Jeopardy Game By Chuanchuan He, Shen Yan, and Xiaoyu Cheng-->
+<html>
+<head>
+    <title>Jeopardy game login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>  
+<body>
+    <div class= "login-page">
+        <h1>Jeopardy!</h1>
+        <div class= "form">
+            <form class="register-form">
+            <input type="text" placeholder="Username" name="userid"/>
+            <input type="text" placeholder="Password" name="psword"/>
+            <button>Create Account</button>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+            </form>
+            
+            <form class="login-form" id="loginform" onsubmit="event.preventDefault(); check();">
+            <input id="username" type="text" placeholder="Username" name="userid"/>
+            <input id="password" type="text" placeholder="Password" name="psword"/>
+            <button onclick="check()">Login</button>
+            <p class="message">Haven't Registered? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},"slow"); 
+        }); 
+        
+        var check = function(){
+            var loginform = document.getElementById("loginform")
+            if (loginform.userid.value !== "Echo" || loginform.psword.value !== "123") {
+                alert("Username and Password don't match!"); 
+                return false;
+            }
+            else {
+                window.location.replace("category.html");
+                return true;
+                }
+            }
+    </script>
+</body>
+</html>

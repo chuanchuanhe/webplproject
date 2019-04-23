@@ -1,0 +1,129 @@
+h1 {
+  color: cadetblue; 
+}
+
+h2 {
+    color: cadetblue; 
+}
+
+#question {
+    color: white; 
+    text-align:center; 
+}
+
+table {
+    width: 80%;
+    height: 600px;
+    text-align:center; 
+    color: white;
+    background-color: mediumaquamarine; 
+    font-size: 27px;
+}
+
+#value {
+    color:white;
+    text-decoration:none; 
+}
+
+#value:hover {
+    color:yellow;
+}
+
+
+#question {
+    font-size:30px; 
+}
+
+div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button { 
+    background-color: mediumaquamarine;
+    padding: 1em, 2em;
+    color: white;
+    border: 0; 
+    font-size: 25px;
+    font-style: normal; 
+} 
+
+.button:hover {
+    color:yellow;
+    cursor: pointer; 
+}
+
+.modal {
+    display: none; /*at first diplay none,need js to bring it up*/
+    position: fixed;
+    z-index:1; /*higher the z-index the more up front*/
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5) /*0.5 is the transparency*/
+}
+
+.modal-content {
+    background-color: mediumaquamarine;
+    margin:18% auto;
+    padding: 23px;
+    width:70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17); 
+    color:black;
+    font-size: 20px; 
+    text-align:center; 
+    animation-name: modalopen; /*animation: see keyframes down below*/
+    animation-duration: 1s; 
+}
+
+.closeBtn {
+    color:grey;
+    float: right;
+    font-size: 30px; 
+}
+
+.closeBtn:hover,.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+.submit_button {
+  margin:30px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.submit_button:hover,.submit_button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+/*an animation for opening up the modal*/
+@keyframes modalopen{
+    from{opacity:0}
+    to{opacity:1} 
+}
+
+#message {
+    color: red; 
+}
+
+#modalBtn:disabled {
+    color:mediumaquamarine; 
+    cursor:auto; 
+}
+
+#endgame:hover {
+    color:yellow;
+}
+

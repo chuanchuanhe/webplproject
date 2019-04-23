@@ -1,0 +1,8 @@
+<Animals>
+    <Animal point="100" id="1">
+        <Question>True or False - the python is a poisonous snake?</Question>
+    </Animal>
+    <Animal point="100" id="2">
+        <Question>Scientific name for an animal with a pouch?</Question>
+    </Animal>
+</Animals>
